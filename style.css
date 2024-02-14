@@ -772,6 +772,14 @@ ul{
     transition: filter 0.3s ease;
 }
 
+.blue{
+    background-color: #2E5068;
+}
+
+.beige{
+    background-color: #A89F91;
+}
+
 .box:hover{
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
     transition: filter 0.3s ease;
