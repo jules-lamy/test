@@ -321,10 +321,13 @@ ul{
 
 #landing-page,
 #le-cabinet,
-#l-equipe,
 #expertises,
 #contact {
     scroll-margin-top: 102px;
+}
+
+#l-equipe{
+    scroll-margin-top: 145px;
 }
 
 
@@ -708,11 +711,12 @@ ul{
 
     .squares-container {
         display: flex;
-        flex-wrap: nowrap; /* Pour empêcher le passage à la ligne */
-        overflow-x: scroll; /* Pour activer le défilement horizontal */
-        -webkit-overflow-scrolling: touch; /* Pour une meilleure prise en charge du défilement sur iOS */
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
         justify-content: left;
         height: 200px;
+        white-space: nowrap; /* Empêcher le passage à la ligne */
     }
     
     .box {
@@ -720,20 +724,7 @@ ul{
         width: 165px !important; 
         height: 165px !important; 
         margin-right: 5px;
-        visibility: hidden; /* Cacher les "box" */
     }
-
-    /* Afficher les "box" avec des délais de chargement pour simuler le préchargement */
-    .box.blue, .box.beige {
-        animation: fadeIn 0.1s forwards; /* Ajouter un délai de chargement pour simuler le préchargement */
-    }
-
-    @keyframes fadeIn {
-        to {
-            visibility: visible; /* Rendre visible */
-        }
-    }
-    
 
     .initial-text {
         width: 160px !important;
