@@ -762,14 +762,6 @@ ul{
     #box-last{
         margin-right: 7.5%;
     }
-
-    .blue{
-        background-color: #2E5068 !important;
-    }
-    
-    .beige{
-        background-color: #A89F91 !important;
-    }
 }
 
 
@@ -784,7 +776,10 @@ ul{
 }
 
 .blue{
-    background-color: #2E5068;
+    background-image: url(images/pictures/groupe-arp.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: cover;
 }
 
 .beige{
