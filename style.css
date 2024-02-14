@@ -716,7 +716,6 @@ ul{
         -webkit-overflow-scrolling: touch;
         justify-content: left;
         height: 200px;
-        white-space: nowrap; /* Empêcher le passage à la ligne */
     }
     
     .box {
@@ -762,6 +761,14 @@ ul{
 
     #box-last{
         margin-right: 7.5%;
+    }
+
+    .blue{
+        background-color: #df7630 !important;
+    }
+    
+    .beige{
+        background-color: #42053a !important;
     }
 }
 
