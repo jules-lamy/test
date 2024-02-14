@@ -708,7 +708,7 @@ ul{
     .squares-container {
         display: flex;
         flex-wrap: nowrap; /* Pour empêcher le passage à la ligne */
-        overflow-x: auto; /* Pour activer le défilement horizontal */
+        overflow-x: scroll; /* Pour activer le défilement horizontal */
         -webkit-overflow-scrolling: touch; /* Pour une meilleure prise en charge du défilement sur iOS */
         justify-content: left;
         height: 200px;
