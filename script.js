@@ -120,4 +120,3 @@ function isElementInViewport(el, visiblePercentage) {
 
 
 
-

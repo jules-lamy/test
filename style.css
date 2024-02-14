@@ -41,6 +41,21 @@ p{
     line-height: normal;
 }
 
+@media screen and (max-width: 900px){
+    h1{
+        font-size: 20px;
+    }
+    
+    h2{
+        font-size: 20px;
+    }
+    
+    p{
+        font-size: 13px;
+    }
+}
+
+
 ul{
 	padding-inline-start: 0px;
 }
@@ -327,12 +342,40 @@ ul{
     margin: 42px;
 }
 
+@media screen and (max-width: 900px){
+    #logo-landing{
+        width: 80%;
+        margin-bottom: 42px;
+        margin-top: auto !important;
+        top: -51px;
+        position: relative;
+    }
+
+    #title-landing{
+        margin-bottom: auto !important;
+        position: relative;
+        top: -51px;
+        margin-top: 35px;
+        font-size: 20px;
+        width: 85%;
+    }
+
+    #barre-logo{
+        position: relative;
+        top: -51px;
+    }
+}
+
+
 #title-landing{
     margin-top: 35px;
     margin-bottom: 7%;
 }
 
+
+
 #le-cabinet{
+    min-height: calc(100vh - 102px);
     margin-left: 5%;
     margin-right: 5%;
     justify-content: space-around;
@@ -341,26 +384,35 @@ ul{
     align-items: center;
 }
 
+.first-line{
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 900px){
+    .first-line{
+        margin-top: 20px;
+    }
+}
+
 #text-cabinet{
     max-width: 575px;
     text-align: left;
     text-align: left;
-    margin-top: 40px;
+    margin-top: 0px;
 }
 
 #image-cabinet{
     max-width: 600px;
     height: 100%;
     object-fit: cover;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 15px;
+    margin-bottom: 0px;
 }
 
-@media (min-width: 767px) {
+@media screen and (max-width: 900px){
     #le-cabinet{
-        min-height: calc(100vh - 102px);
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 0;
+        margin-right: 0;
         justify-content: space-around;
         display: flex;
         flex-wrap: wrap;
@@ -368,18 +420,18 @@ ul{
     }
     
     #text-cabinet{
-        max-width: 575px;
+        width: 85%;
         text-align: left;
         text-align: left;
-        margin-top: 0px;
+        margin-top: 25px;
     }
     
     #image-cabinet{
-        max-width: 600px;
+        max-width: 85%;
         height: 100%;
         object-fit: cover;
-        margin-top: 15px;
-        margin-bottom: 0px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 }
 
@@ -409,6 +461,12 @@ ul{
     margin-bottom: 50px;
 }
 
+@media screen and (max-width: 900px){
+    #titre-equipe svg{
+        margin-bottom: 10px;
+    }
+}
+
 .profile-l{
     min-height: calc(96vh - 102px);
     justify-content: space-evenly;
@@ -425,6 +483,16 @@ ul{
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 40px;
+}
+
+@media screen and (max-width: 900px){
+    .profile-l{
+        margin-bottom: 0px;
+    }
+    
+    .profile-r{
+        margin-bottom: 0px;
+    }
 }
 
 .picture-portrait{
@@ -499,9 +567,23 @@ ul{
     object-fit: cover;
 }
 
+@media screen and (max-width: 900px){
+    .image-avocat{
+        width: 85%;
+    }
+}
+
 .text-portrait{
     margin-right: 10%;
     margin-left: 10%;
+}
+
+@media screen and (max-width: 900px){
+    .text-portrait{
+        margin-right: 0;
+        margin-left: 0;
+        width: 85%;
+    }
 }
 
 .avocat-name{
@@ -601,6 +683,16 @@ ul{
     margin-right: auto;
 }
 
+@media screen and (max-width: 900px){
+    #expertises-text p{
+        width: 85%;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 
 .squares-container {
     max-width: 1037px;
@@ -612,11 +704,63 @@ ul{
     margin-bottom: 80px;
 }
 
-@media (max-device-width: 685px) {
+@media screen and (max-width: 900px) {
     .squares-container {
-        max-width: 685px; /* Modification de la max-width pour les mobiles */
+        display: flex;
+        flex-wrap: nowrap; /* Pour empêcher le passage à la ligne */
+        overflow-x: auto; /* Pour activer le défilement horizontal */
+        -webkit-overflow-scrolling: touch; /* Pour une meilleure prise en charge du défilement sur iOS */
+        justify-content: left;
+        height: 200px;
+    }
+    
+    .box {
+        flex: 0 0 auto;
+        width: 165px !important; 
+        height: 165px !important; 
+        margin-right: 5px;
+    }
+
+    .initial-text {
+        width: 160px !important;
+        font-size: 16px;
+    }
+    
+    .hover-text {
+        width: 160px !important;
+        font-size: 12px !important;
+    }
+
+    .box:hover{
+        filter: none !important;
+    }
+
+    .box:active .initial-text {
+        opacity: 0;
+    }
+    
+    .box:active .hover-text {
+        opacity: 1;
+    }
+
+    .squares-container {
+        margin-bottom: 0px;
+    }
+
+    #expertises{
+        margin-bottom: 50px;
+    }
+
+    #box-1{
+        margin-left: 7.5%;
+    }
+
+    #box-last{
+        margin-right: 7.5%;
     }
 }
+
+
 
 .box {
     width: 189px;
@@ -700,7 +844,7 @@ ul{
 
 
 #contact{
-    height: 275px;
+    height: auto;
     background: #2E5068;
 }
 
@@ -713,6 +857,23 @@ ul{
 #contact-elements {
     display: flex;
     justify-content: space-evenly;
+}
+
+@media screen and (max-width: 900px){
+    #contact-elements {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #localisation,
+    #phone-mail {
+    width: 260px;
+    margin: 10px 0px;
+    }
+
+    #mentions{
+        margin-top: 30px !important;
+    }
 }
 
 #localisation,
@@ -767,6 +928,7 @@ ul{
     text-decoration-line: underline;
     display: flex;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 
