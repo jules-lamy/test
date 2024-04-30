@@ -899,8 +899,13 @@ text-transform: lowercase;
     min-height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-size: 40%;
+    background-size: auto 200px, contain;
+}
+
+@media screen and (max-width: 900px) {
+    .expertises-desc{
+        background-size: contain;
+    }
 }
 
 
