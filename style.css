@@ -501,6 +501,37 @@ ul{
     flex-wrap: wrap;
 }
 
+@media screen and (max-width: 900px){
+    #list-other-avocats{
+        width: 100%;
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
+    .other-avocat-card{
+        width: 40%;
+    }
+
+    .other-avocat-card-img{
+        height: auto !important; 
+        width: 100% !important;
+        object-fit: cover;
+        transition: transform .3s;
+    }
+
+    .other-avocat-card .avocat-card-text .avocat-name{
+        font-size: 14px;
+    }
+
+    .other-avocat-card .avocat-card-text .poste{
+        font-size: 10px;
+    }
+
+    .other-avocat-card .avocat-card-text .avocats-contact{
+        font-size: 10px;
+    }
+}
+
 .avocat-card{
     max-height: 650px;
     margin: 10px;
@@ -655,6 +686,12 @@ text-transform: lowercase;
     margin-right: -75px;
 }
 
+
+@media screen and (max-width: 900px){
+    #fond-clemence, #fond-marine, #fond-alexandre{
+        width: 100%;
+    }
+}
 
 
 .image-avocat{
